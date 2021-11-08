@@ -17,6 +17,14 @@ def printBoard(board):
 def isBoardFull(board):
     return board.count(' ') <= 1
 
+def userReference():
+    print('For your reference, these are the position numbers:')
+    print(' 1  |  2  | 3  ')
+    print('---------------')
+    print(' 4  |  5  |  6 ')
+    print('---------------')
+    print(' 7  |  8  |  9 \n')
+    
 def IsWinner(b,l):
     return ((b[1] == l and b[2] == l and b[3] == l) or
     (b[4] == l and b[5] == l and b[6] == l) or
@@ -76,14 +84,6 @@ def selectRandom(li):
     ln = len(li)
     r = random.randrange(0,ln)
     return li[r]
-
-def userReference():
-    print('For your reference, these are the position numbers:')
-    print(' 1  |  2  | 3  ')
-    print('---------------')
-    print(' 4  |  5  |  6 ')
-    print('---------------')
-    print(' 7  |  8  |  9 \n')
 
 def main():
     print("Welcome to the game!\n")
